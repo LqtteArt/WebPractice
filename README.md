@@ -12,8 +12,9 @@ HTML/CSSの勉強用
 ***
 #htmlまとめ課題
 
-Gitで新しくリポジトリ名「webPractice」を作成してmasterから「html_summary_challenge」ブランチを作成(ブランチ作成したら1回空プッシュしてね)
-＊各大問ごとにdivタグでブロック化してコミットする事
+・Gitで新しくリポジトリ名「webPractice」を作成  
+・mainから「html_summary_challenge」ブランチを作成(ブランチ作成したら1回空プッシュしてね)  
+・各大問ごとにdivタグでブロック化してコミットする事
 
 ## 1.基礎
 htmlのひな型を「index.html」ファイルで作成
