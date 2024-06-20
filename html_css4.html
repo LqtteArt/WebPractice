@@ -5,8 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webPractice</title>
     <meta name="description" content="webPractice">
+    <style>
+        #main{
+            width: 1000px;
+            height: 3000px;
+            position: relative;
+        }
+        #topheading{
+            width: 1000px;
+            height: auto;
+            position: static;
+            font-weight: bold;
+            text-align: center;
+        }
+        .heading{
+            width: 1000px;
+            height: 50px;
+            position: static;
+            text-align: center;
+        }
+        #nice{
+            width: 1000px;
+            height: 400px;
+            position: relative;
+        }
+        .apple{
+            width: 1000px;
+            height: auto;
+            position: static;
+            color: red;
+        }
+        .list{
+            width: 1000px;
+            height: auto;
+            position: relative;
+            background-color: blue;
+            color: white;
+        }
+        .banana{
+            font-style: italic;
+            font-weight: bold;
+            text-align: right;
+        }
+        #great{
+            width: 1000px;
+            height: 600px;
+            position: relative;
+        }
+        #jpg{
+            width: 300px;
+            height: auto;
+            position: absolute;
+            top: 50px;
+            left: 350px
+        }
+        #mp4{
+            width: 500px;
+            height: auto;
+            position: absolute;
+            top: 400px;
+            left: 250px;
+        }
+        #excellent{
+            width: 1000px;
+            height: 1200px;
+            position: relative;
+        }
+        .text{
+            width: 300px;
+            height: 200px;
+            position: static;
+        }
+        #movie{
+            width: 300px;
+            height: auto;
+            position: static;
+        }
+        .button{
+            width: 150px;
+            height: 30px;
+            position: relative;
+        }
+        #perfect{
+            width: 1000px;
+            height: 500px;
+            position: relative;
+        }
+        #table{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: auto;
+            left: 300px;
+        }
+        #parent{
+            width: 400px;
+            height: auto;
+            position: relative;
+            color: blue;
+            font-weight: bold;
+        }
+        .child{
+            width: 400px;
+            height: auto;
+            position: relative;
+            color: pink;
+        }
+
+
+    </style>
 </head>
-<body>
+<body id="main">
     <!-- タイトル -->
     <h1 id="topheading">class、idについて</h1>
     <!-- 大問2:文字列 --------------------------------------------->
@@ -18,14 +127,14 @@
     <!-- bタブ.太字にする -->
     <p class="apple"><b>夜ごはんは焼肉</b></p>
     <!-- 順不同リスト -->
-    <ul class="rist">
+    <ul class="list">
         <li class="banana">カルビ</li>
         <li class="banana">ハラミ</li>
         <li class="banana">タン</li>
         <li class="banana">レバー</li>
     </ul>
     <!-- 順番があるリスト -->
-    <ol class="rist">
+    <ol class="list">
         <li class="banana">タイ</li>
         <li class="banana">ブリ</li>
         <li class="banana">マグロ</li>
@@ -67,9 +176,9 @@
         <input type="button" value="5億年ボタン" onclick="location.href='./subpage.html'" class="button">
         <!-- table.表全体の範囲 border.枠線つける bordercolor.枠線に色付ける width.height.表全体の大きさの指定（横.縦） -->
         <table border="5" bordercolor="red" width="450" height="500" id="table">
-            <tr>
+            <tr id="parent">
                 <!-- 表の見出し colspan.セルを横にx個つなげる align.物理的なデータの表記位置の指定 -->
-                <th colspan="9" align="center" id="parent">九九表</th>
+                <th colspan="9" align="center">九九表</th>
             </tr>
             <!-- 表の行 align.trで囲まれている範囲すべての物理的なデータ位置の指定 bgcolor.セルに色を付ける -->
             <tr align="center" bgcolor="yellow" class="child">
