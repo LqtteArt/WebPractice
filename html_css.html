@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csspra</title>
+    <meta name="description" content="css css css">
+    <style>
+        h1{color: red; }
+        body{
+             background-image: url(./background.jpg) ;
+             background-size: 1920px ;
+             background-repeat: no-repeat;
+             }
+    </style>
+</head>
+<body>
+<!--タイトル-->
+    <h1>CSSをhtmlファイルに書き込もう</h1>
+    <!--プロパティの一覧並べる-->
+    <!--前提として、headにstyleタグをいれるかタグにstyle属性を付与する-->
+    <!--外部ファイルを利用する場合、タグにclassかidを付与する-->
+    <!--classかidに対して#をつけて指定する-->
+    <h2 style="background-color: aqua;">プロパティ一覧</h2>
+    <table border="5" style="background-color: white;">
+        <tr>
+            <th>プロパティ名</th>
+            <th>説明</th>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td style="color: blue;">テキストの色を指定</td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td style="font-size: 20px;">テキストのフォントサイズを指定</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td style="font-family: 'Courier New', Courier, monospace;">テキストのフォントファミリーを指定</td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td style="font-weight: 1000;">テキストの太さを指定</td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td style="text-align: center;">テキストの水平方向の配置を指定</td>
+        </tr>
+        <tr>
+            <td>text-decoration</td>
+            <td style="text-decoration: underline;">テキストの装飾</td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td style="line-height: 10mm;">行の高さを指定</td>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td style="background-color: yellow;">背景色の指定</td>
+        </tr>
+        <!--bodyに反映-->>
+        <tr>
+            <td>background-image</td>
+            <td>背景画像を指定</td>
+        </tr>
+        <tr>
+            <td>background-repeat</td>
+            <td>背景画像の種類を指定</td>
+        </tr>
+        <tr>
+            <td>background-size</td>
+            <td>背景画像の大きさを指定</td>
+        </tr>
+        <!--使い方よくわからない-->>
+        <tr>
+            <td>margin</td>
+            <td style="margin: 100px;">要素の外側の余白を指定</td>
+        </tr>
+        <tr>
+            <td>padding</td>
+            <td style="padding: 30px;">要素の内側の余白を指定</td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td style="border: 1px solid red;">境界線のスタイル、太さ、色を指定</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td style="width: 1000px;">要素の幅を指定</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td style="height: 100px;">要素の高さを指定</td>
+        </tr>
+        <!--実践での使い方よくわからない、基本的にblock,inlineで使うっぽい？-->>
+        <tr>
+            <td>display</td>
+            <td style="display: block;">要素の表示方法を指定</td>
+        </tr>
+        <tr>
+            <td>position</td>
+            <td style="position: absolute;">要素の位置を指定</td>
+        </tr>
+        <tr>
+            <td>opacity</td>
+            <td style="opacity: 0.5;">要素の透明度を指定</td>
+        </tr>
+        <tr>
+            <td>box-shadow</td>
+            <!--左右　上下　ぼかし　広がり　色　内外-->>
+            <td style="box-shadow: 2px 2px 4px 2px gray inset;">要素に影を付ける効果を指定</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
