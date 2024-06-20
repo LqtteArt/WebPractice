@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>テキスト関連のcss</title>
     <meta name="description" content="text css">
+    <style>
+        h2{
+            width: 1000px; 
+            height: 30px; 
+            position: relative;
+        }
+    </style>
 </head>
 <body>
-<!--※参照　https://saruwakakun.com/html-css/basic/text-setting-->>
+<!--※参照　https://saruwakakun.com/html-css/basic/text-setting-->
     <h1>テキスト関連のCSS</h1>
-    <div style="width: 1000px; height: 1000px; position: relative;">
-        <h2 style="width: auto; height: auto; position: static;">テキストの基本設定と装飾</h2>
+    <div style="width: 1000px; height: 700px; position: relative;">
+        <h2>テキストの基本設定と装飾</h2>
         <ol style="width: 500px; height: 700px; position: static;">
             <li style="font-size: 25px;">
                 フォントサイズを設定<br/>
@@ -56,7 +63,22 @@
                 font-family: フォント名
             </li>
         </ol>
-        
+    </div>
+    <div style="width: 1000px; height: 1000px; position: relative;">
+        <h2>テキストの位置について</h2>
+        <p style="width: auto; height: auto; position: static;">
+            テキストを親の位置に対して左右中央に寄せる<br/>
+            text-align: left or center or right
+        </p>
+        <p style="text-align: left; width: auto; height: auto; position: static;">
+            left
+        </p>
+        <p style="text-align: center; width: auto; height: auto; position: static;">
+            center
+        </p>
+        <p style="text-align: right; width: auto; height: auto; position: static;">
+            right
+        </p>
     </div>
 </body>
 </html>
