@@ -5,29 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>display</title>
     <meta name="description" content="display">
+    <link rel="stylesheet" href="./display.css">
 </head>
-<body>
+<body style="margin-bottom: 20px;">
+    <!--ブロック要素、インライン要素の状態を変更できるプロパティ-->
     <h1>displayのプロパティについて</h1>
-    <div>
-        <h2>ブロック要素、インライン要素とは</h2>
-        <ul>
-            <li>
+    <div style="width:98%;padding:0px;margin-top: 25px;">
+        <h2 style="width: 98%;">ブロック要素、インライン要素とは</h2>
+        <ul style="width: 98%;">
+            <li class="list">
                 ブロック要素<br/>
                 WEB上のレイアウトのまとまりとして使われる要素。<br/>
                 テキストが入ってる箱のイメージ。
             </li>
-            <li>
+            <li class="list">
                 インライン要素<br/>
                 ラインの中の要素。文の行に含まれることが想定されてる要素。<br/>
                 ブロック要素の中にインライン要素。
             </li>
-            <li>
+            <li class="list">
                 インラインブロック要素<br/>
                 ブロック要素とインライン要素を併せ持つ要素。<br/>
                 横並びにできたり、高さの指定ができたりする。
             </li>
         </ul>
-
+    </div>
+    <div style="width:98%;padding:0px;margin-top: 25px;">
+        <h2 style="width: 98%;">プロパティ</h2>
+        <p class="text">
+            display:block;<br/>
+            要素をブロック要素にできる。
+            ボタンなども作れる。
+        </p>
+        <a href="./subPage.html" 
+           style="background-color: aqua; text-align: center; width: 200px; padding: 20px; 
+                color:black; text-decoration: none; display: block;">
+            サブページ
+        </a>
+        <p class="text">
+            display:inline;<br/>
+            ブロック要素をインライン要素にする。<br/>
+            divなどのブロック要素を横並びにできる。<br/>
+        </p>
+        <div style="display: inline; background-color: red; width: 100px;">
+            横並び１
+        </div>
+        <div style="display: inline; background-color: blueviolet; width: 100px;">
+            横並び２
+        </div>
+        <div style="display: inline; background-color: blue; width: 100px;">
+            横並び３<br/>
+        </div>
+        <p class="text">
+            display:inline-block;<br/>
+            要素をインラインブロック要素にできる。<br/>
+            元の要素関係なくインラインブロック要素になる。<br/>
+            横並びにしながら高さの指定もできる。<br/>
+        </p>
+        <div style="display: inline-block; height: 50px; background-color: red;">
+            横並び４
+        </div>
+        <div style="display: inline-block; height: 50px; background-color: blueviolet;">
+            横並び５
+        </div>
+        <div style="display: inline-block; height: 50px; background-color: blue;">
+            横並び６
+        </div>
+        <p class="text">
+            display:none;<br/>
+            要素を非表示にできる。<br/>
+            表示の存在がなくなるので、高さなどもなくなる。
+        <p>
+        <span style="display: none;">
+            ソース上には存在します。
+        </span>
+        <p class="text">
+            display:flex;<br/>
+            指定した要素の子要素を並列に横並びにできる。（親要素に書く）
+        </p>
+        <div style="display: flex;">
+            <div  style="width: 100px; height: 50px; background-color: blue;">
+                横並びa
+            </div>
+            <div  style="width: 100px; height: 50px; background-color: blueviolet;">
+                横並びb
+            </div>
+            <div  style="width: 100px; height: 50px; background-color: red;">
+                横並びc
+            </div>
+        </div>
     </div>
 </body>
 </html>
