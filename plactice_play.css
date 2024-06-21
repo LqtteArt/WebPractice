@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+.element{
+    width: 500px;
+    text-align: center;
+
+}
+
+span{
+    width: 400px;
+    margin-left: 50px;
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+#red{
+    background-color: red;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+table{
+    width: 400px;
+    margin-left: 50px;
+    padding: 10px;
+    border-collapse: collapse;
+    border: 2px solid black;
+    background-color: gray;
+    
+}
+
+.topeffect{
+    width: 35%;
+    border: 1px solid black;
+}
+
+.data{
+    width: 25%;
+    border: 1px solid black;
+}
+
+.lv{
+    width: 20%;
+    border: 1px solid black;
+}
+
+.dmg{
+    width: 20%;
+    border: 1px solid black;
+}
+
+.effect{
+    width: 35%;
+    border: 1px solid black;
+    font-size: 10px;
+}
