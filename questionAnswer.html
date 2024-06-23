@@ -171,5 +171,56 @@
             </tbody>
         </table>
     </div>
+
+    <div style="width:98%;padding:0px;margin-top: 25px;" align="center">
+        <table>
+            <tbody>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th class="question">質問内容(display)</th>
+                    <th class="answer">回答</th>
+                    <th class="another">その他</th>
+                </tr>
+                <tr>
+                    <td class="questionNumber">1</td>
+                    <td class="question">実際よく使うdisplayの指定はなにか</td>
+                    <td class="answer">基本的に使うものはflexが多いかもしれない</td>
+                    <td class="another">
+                        まだ先の話になるけど、jsを使ったりして動的に要素を追加するときにはinline使ったりもするかも
+                    </td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">2</td>
+                    <td class="question">divにdivをいれることはよくあるのか</td>
+                    <td class="answer">入れることはある</td>
+                    <td class="another">divで囲うものは一つの表示ブロックなのが理想</td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">3</td>
+                    <td class="question">display:none;はどう使うことが多いのか</td>
+                    <td class="answer">jsとかで動的に表示切替したりする時に使う</td>
+                    <td class="another">
+                        基本的に純粋なHTML、CSSだけの時だとポップアップとかで使ったりする
+                        <!-- ポップアップ　-->
+                        <input type="checkbox" id="popup">
+                        <label class="popup-open" for="popup">ポップアップを表示する</label>
+                        <div class="popup-overlay">
+                            <div class="popup-window">
+                                <p class="popup-text">ポップアップやで</p>
+                                <label class="popup-close" for="popup" style="color:white;">閉じる</label>
+                            </div>
+                        </div>
+                        <!-- ポップアップここまで -->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="questionNumber">EX</td>
+                    <td class="question">位置指定について、position使わないことあるのか</td>
+                    <td class="answer">ホームページの背景とかでスクロールしても位置が変わらない時とかに使ったりする</td>
+                    <td class="another"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
